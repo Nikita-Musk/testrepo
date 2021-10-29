@@ -1,0 +1,9 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        tmp = str(x)
+        i = 0
+        for i in range(len(tmp)):
+            if tmp[i] != tmp[-(i+1)]:
+                return False
+                break
+        return True
